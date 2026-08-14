@@ -128,7 +128,7 @@ fn parse_input(
 fn cmd_version() -> String {
   let fields : Map[String, Json] = Map([])
   fields.set("version", Json::string(library_version()))
-  fields.set("module", Json::string("localdev/moon-webfinger"))
+  fields.set("module", Json::string("qianfuzsc/moon-webfinger"))
   ok_json("version", fields)
 }
 

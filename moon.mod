@@ -1,10 +1,12 @@
-name = "localdev/moon-webfinger"
+name = "qianfuzsc/moon-webfinger"
 
 version = "0.1.0-dev"
 
 readme = "README.md"
 
 license = "Apache-2.0"
+
+repository = "https://github.com/qianfuzsc/moon-webfinger"
 
 description = "RFC 7033 WebFinger and JRD parser, serializer, request builder, query and audit toolkit for MoonBit."
 

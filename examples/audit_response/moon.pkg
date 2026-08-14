@@ -1,5 +1,5 @@
 import {
-  "localdev/moon-webfinger" @wf,
+  "qianfuzsc/moon-webfinger" @wf,
 }
 
 pkgtype(kind: "executable")

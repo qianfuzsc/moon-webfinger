@@ -1,11 +1,13 @@
 # moon-webfinger
 
-Module: `localdev/moon-webfinger`  
-Version: `0.1.0-dev`  
-Status: local mature MVP  
-Mooncakes: not published  
-Repository: not assigned  
-Final maintainer namespace: not selected
+- Module: `qianfuzsc/moon-webfinger`
+- Version: `0.1.0-dev`
+- Status: mature MVP
+- Mooncakes: not published
+- Repository: <https://github.com/qianfuzsc/moon-webfinger>
+- Applicant and maintainer: 赵士超
+- GitHub: `qianfuzsc`
+- Email: `3200329122@qq.com`
 
 ## Overview
 
@@ -93,6 +95,6 @@ There is no HTTP client or server, DNS, TLS, certificate validation, redirect en
 
 Apache License 2.0. See [LICENSE](LICENSE). Reconstructed RFC fixtures are attributed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-## Local Development Status
+## Project Status
 
-This is an unpublished local mature MVP. No Git repository, hosting repository, applicant identity, or final maintainer namespace is assigned.
+This is a mature MVP maintained by 赵士超 (`qianfuzsc`). The source repository is hosted on GitHub; the module has not been published to Mooncakes.
