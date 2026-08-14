@@ -1,0 +1,6 @@
+import {
+  "moonbitlang/core/env",
+  "localdev/moon-webfinger" @wf,
+}
+
+pkgtype(kind: "executable")
