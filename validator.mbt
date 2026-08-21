@@ -47,7 +47,7 @@ pub struct ValidationIssue {
 ///|
 /// The severity name, for consumer packages that cannot match the enum.
 pub fn ValidationIssue::severity_name(self : ValidationIssue) -> String {
-  self.severity.to_string()
+  Show::to_string(self.severity)
 }
 
 ///|

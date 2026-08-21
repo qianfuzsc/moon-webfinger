@@ -199,7 +199,7 @@ pub fn JrdLink::has_property(self : JrdLink, uri : String) -> Bool {
 /// updated together (single source discipline documented in
 /// `docs/reproduction.md`).
 pub fn library_version() -> String {
-  "0.1.0-dev"
+  "0.1.0"
 }
 
 ///|

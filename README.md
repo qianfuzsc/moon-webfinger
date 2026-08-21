@@ -1,13 +1,12 @@
 # moon-webfinger
 
 - Module: `qianfuzsc/moon-webfinger`
-- Version: `0.1.0-dev`
-- Status: mature MVP
-- Mooncakes: not published
+- Version: `0.1.0`
+- Status: final-review release candidate
+- Mooncakes: release target `qianfuzsc/moon-webfinger@0.1.0`
 - Repository: <https://github.com/qianfuzsc/moon-webfinger>
 - Applicant and maintainer: 赵士超
 - GitHub: `qianfuzsc`
-- Email: `3200329122@qq.com`
 
 ## Overview
 
@@ -97,4 +96,4 @@ Apache License 2.0. See [LICENSE](LICENSE). Reconstructed RFC fixtures are attri
 
 ## Project Status
 
-This is a mature MVP maintained by 赵士超 (`qianfuzsc`). The source repository is hosted on GitHub; the module has not been published to Mooncakes.
+This is a mature MVP maintained by 赵士超 (`qianfuzsc`). Version `0.1.0` is the final-review release target for Mooncakes.

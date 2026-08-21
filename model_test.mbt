@@ -130,6 +130,6 @@ test "jrd link semantic equality with null and absent distinctions" {
 }
 
 ///|
-test "library_version is 0.1.0-dev" {
-  inspect(library_version(), content="0.1.0-dev")
+test "library_version is 0.1.0" {
+  inspect(library_version(), content="0.1.0")
 }

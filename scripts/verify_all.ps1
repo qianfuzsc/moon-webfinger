@@ -73,7 +73,7 @@ foreach ($Target in @("wasm-gc", "js", "native")) {
 }
 
 foreach ($Target in @("wasm-gc", "js")) {
-    Invoke-Smoke "$Target CLI version" $Moon @("run", "--target", $Target, "cmd/webfinger-tool", "version") '"version":"0.1.0-dev"'
+    Invoke-Smoke "$Target CLI version" $Moon @("run", "--target", $Target, "cmd/webfinger-tool", "version") '"version":"0.1.0"'
 }
 
 Invoke-Checked "native release build" $Moon @("build", "--target", "native", "--release", "--deny-warn")
@@ -83,7 +83,7 @@ if (-not (Test-Path -LiteralPath $NativeCli -PathType Leaf)) {
     exit 1
 }
 $Fixture = Join-Path $ProjectRoot 'smoke_jrd.json'
-Invoke-Smoke "native CLI version" $NativeCli @("version") '"version":"0.1.0-dev"'
+Invoke-Smoke "native CLI version" $NativeCli @("version") '"version":"0.1.0"'
 Invoke-Smoke "native CLI request" $NativeCli @("request", "--resource", "acct:alice@example.com") 'acct%3Aalice%40example.com'
 Invoke-Smoke "native CLI parse" $NativeCli @("parse", "--input-file", $Fixture) '"command":"parse"'
 Invoke-Smoke "native CLI validate" $NativeCli @("validate", "--input-file", $Fixture) '"valid":true'

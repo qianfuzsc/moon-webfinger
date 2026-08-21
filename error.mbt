@@ -149,13 +149,13 @@ pub fn WebFingerError::context(self : WebFingerError) -> String {
 ///|
 /// The stage name, for consumer packages that cannot match the enum.
 pub fn WebFingerError::stage_name(self : WebFingerError) -> String {
-  self.stage().to_string()
+  Show::to_string(self.stage())
 }
 
 ///|
 /// The kind name, for consumer packages that cannot match the enum.
 pub fn WebFingerError::kind_name(self : WebFingerError) -> String {
-  self.kind().to_string()
+  Show::to_string(self.kind())
 }
 
 ///|

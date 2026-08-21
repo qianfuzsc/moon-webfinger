@@ -1,6 +1,6 @@
 # Reproduction
 
-Repository: <https://github.com/qianfuzsc/moon-webfinger>. Maintainer: 赵士超 (`3200329122@qq.com`).
+Repository: <https://github.com/qianfuzsc/moon-webfinger>. Maintainer: 赵士超 (`qianfuzsc`).
 
 Requirements are a current MoonBit toolchain compatible with the module and Python 3 for metrics. Native verification additionally requires the compiler/linker configured by MoonBit.
 

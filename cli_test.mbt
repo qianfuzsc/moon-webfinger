@@ -21,7 +21,7 @@ test "cli normalization covers native js and wasm argv layouts" {
 test "cli outputs are exact deterministic json" {
   inspect(
     run_cli(["version"]),
-    content="{\"ok\":true,\"module\":\"qianfuzsc/moon-webfinger\",\"command\":\"version\",\"version\":\"0.1.0-dev\"}",
+    content="{\"ok\":true,\"module\":\"qianfuzsc/moon-webfinger\",\"command\":\"version\",\"version\":\"0.1.0\"}",
   )
   inspect(
     run_cli(["request", "--resource", "acct:alice@example.com"]),

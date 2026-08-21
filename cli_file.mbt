@@ -98,7 +98,7 @@ extern "js" fn cli_read_file(path : String) -> String? =
 
 ///|
 /// The wasm-gc target has no local file access; report unavailability.
-#cfg(target="wasm-gc")
+#cfg(any(target="wasm", target="wasm-gc"))
 fn cli_read_file(_path : String) -> String? {
   None
 }
@@ -123,7 +123,7 @@ pub fn cli_file_input_supported() -> Bool {
 }
 
 ///|
-#cfg(target="wasm-gc")
+#cfg(any(target="wasm", target="wasm-gc"))
 pub fn cli_file_input_supported() -> Bool {
   false
 }

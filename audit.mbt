@@ -37,7 +37,7 @@ pub struct AuditFinding {
 ///|
 /// The severity name, for consumer packages that cannot match the enum.
 pub fn AuditFinding::severity_name(self : AuditFinding) -> String {
-  self.severity.to_string()
+  Show::to_string(self.severity)
 }
 
 ///|
