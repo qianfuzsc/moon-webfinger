@@ -56,7 +56,12 @@ pub fn normalize_cli_args(args : Array[String]) -> Array[String] {
 /// are recognised by their bare names.
 fn is_program_path(arg : String) -> Bool {
   let lower = arg.to_lower()
-  if lower == "node" || lower == "deno" || lower == "bun" {
+  if lower == "node" ||
+    lower == "deno" ||
+    lower == "bun" ||
+    lower.has_suffix("/node") ||
+    lower.has_suffix("/deno") ||
+    lower.has_suffix("/bun") {
     return true
   }
   if !(arg.contains("/") || arg.contains("\\")) {

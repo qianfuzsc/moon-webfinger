@@ -11,6 +11,13 @@ test "cli normalization covers native js and wasm argv layouts" {
     msg="js argv",
   )
   assert_eq(
+    normalize_cli_args([
+      "/usr/local/bin/node", "/workspace/webfinger-tool.js", "version",
+    ]),
+    ["version"],
+    msg="js argv with absolute POSIX runtime path",
+  )
+  assert_eq(
     normalize_cli_args(["D:/tool.wasm", "stats", "--input", "{}"]),
     ["stats", "--input", "{}"],
     msg="wasm argv",
